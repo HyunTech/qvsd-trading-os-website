@@ -1,0 +1,6 @@
+.wrangler/
+dist-cloudflare/
+qvsdtrading-cloudflare-pages.zip
+
+.DS_Store
+Thumbs.db

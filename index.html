@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QVSD Trading OS | NinjaTrader 트레이더를 위한 시장 분석 허브</title>
+    <meta
+      name="description"
+      content="QVSD Trading OS는 NinjaTrader 트레이더를 위한 무료 인디케이터, 시장 분석 워크플로우, 커뮤니티 허브입니다."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ticker" aria-label="Market pulse">
+      <div class="ticker__track" data-ticker-track></div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#home" aria-label="QVSD home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="34" height="34" fill="none">
+              <circle cx="21" cy="21" r="14.5" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="31.5" y1="31.5" x2="43" y2="43" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"></line>
+              <line x1="15" y1="29" x2="15" y2="16" stroke="currentColor" stroke-width="1.4"></line>
+              <rect x="13" y="20" width="4" height="7" rx="1" fill="currentColor"></rect>
+              <line x1="21" y1="31" x2="21" y2="13" stroke="currentColor" stroke-width="1.4"></line>
+              <rect x="19" y="17" width="4" height="9" rx="1" fill="currentColor"></rect>
+              <line x1="27" y1="26" x2="27" y2="11" stroke="currentColor" stroke-width="1.4"></line>
+              <rect x="25" y="13" width="4" height="7" rx="1" fill="currentColor"></rect>
+              <path d="M13 26 L20 20 L26 23 L31 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M31 14 L26.5 14 M31 14 L31 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span>QVSD</span>
+            <small>Quant Vision · Setting Direction</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#home">홈</a>
+          <a href="#indicators">인디케이터</a>
+          <a href="#os">Trading OS</a>
+          <a href="#community">커뮤니티</a>
+          <a href="#roadmap">로드맵</a>
+        </nav>
+
+        <a
+          class="header-cta"
+          href="https://lp.ninjatrader.com/platform?irgwc=1&amp;afsrc=1&amp;im_ref=WPRQ8d3LLxyZWyS0AX32oTqcUkuTveyWMTZKXs0&amp;sharedid=&amp;irpid=6341513"
+          target="_blank"
+          rel="noopener"
+        >
+          <span aria-hidden="true">↗</span>
+          NinjaTrader 시작하기
+        </a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero__copy">
+          <div class="eyebrow">
+            <span></span>
+            NinjaTrader 8 · Free Indicator Pack
+          </div>
+          <h1>QVSD Trading OS</h1>
+          <p class="hero__lead">
+            차트를 열기 전에 시장을 먼저 정리하세요. QVSD는 NinjaTrader 트레이더를 위한 무료 인디케이터와 시장 분석 워크플로우를 하나의 흐름으로 제공합니다.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#indicators">
+              <span aria-hidden="true">▦</span>
+              무료 인디케이터 받기
+            </a>
+            <a
+              class="button button--secondary"
+              href="https://lp.ninjatrader.com/platform?irgwc=1&amp;afsrc=1&amp;im_ref=WPRQ8d3LLxyZWyS0AX32oTqcUkuTveyWMTZKXs0&amp;sharedid=&amp;irpid=6341513"
+              target="_blank"
+              rel="noopener"
+            >
+              <span aria-hidden="true">↗</span>
+              NinjaTrader 시작하기
+            </a>
+          </div>
+          <dl class="metric-strip" aria-label="QVSD indicator metrics">
+            <div>
+              <dt>8</dt>
+              <dd>분석 도구</dd>
+            </div>
+            <div>
+              <dt>4</dt>
+              <dd>즉시 다운로드</dd>
+            </div>
+            <div>
+              <dt>NT8</dt>
+              <dd>NinjaTrader 호환</dd>
+            </div>
+            <div>
+              <dt>OS</dt>
+              <dd>Trading OS 확장</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="console" aria-label="Indicator download console">
+          <div class="console__bar">
+            <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span>Download Console</span>
+            <strong>LIVE</strong>
+          </div>
+          <div class="console__body">
+            <div class="price-line">
+              <span>ESM6</span>
+              <strong>5,412.25</strong>
+              <em>+0.84%</em>
+            </div>
+            <div class="hero-chart" data-chart="hero"></div>
+            <div class="quick-downloads" data-quick-downloads></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section indicators" id="indicators">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              Indicator Library
+            </div>
+            <h2>NinjaTrader에 바로 올리는 QVSD 인디케이터 팩</h2>
+          </div>
+          <p>
+            오더플로우, 볼륨 프로파일, CVD, VWAP부터 퀀트형 리서치 도구까지. 매매 전 시장을 더 빠르게 읽기 위한 도구를 한 곳에서 확인하세요.
+          </p>
+        </div>
+
+        <div class="filter-bar" data-filter-bar aria-label="Indicator filters"></div>
+        <div class="indicator-grid" data-indicator-grid></div>
+      </section>
+
+      <section class="section detail-section is-hidden" id="indicator-detail" aria-live="polite">
+        <div class="detail-shell">
+          <button class="ghost-button" type="button" data-close-detail>
+            <span aria-hidden="true">←</span>
+            인디케이터 목록
+          </button>
+          <div class="detail-layout">
+            <article class="detail-copy">
+              <span class="tag" data-detail-tag></span>
+              <h2 data-detail-title></h2>
+              <p data-detail-long></p>
+              <ul class="feature-list" data-detail-features></ul>
+              <div class="detail-actions" data-detail-actions></div>
+            </article>
+            <div class="terminal-preview">
+              <div class="terminal-preview__head">
+                <span data-detail-terminal-title></span>
+                <strong>NinjaTrader 8</strong>
+              </div>
+              <div class="terminal-chart" data-chart="detail"></div>
+              <div class="terminal-preview__foot">차트 프리뷰 · NinjaTrader 워크플로우 예시</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section os-section" id="os">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              Trading OS Preview
+            </div>
+            <h2>차트 위에 흩어진 판단을 하나의 운영체제로</h2>
+          </div>
+          <p>
+            QVSD는 단순한 지표 모음이 아닙니다. 시장 현황, 리스크 상태, 전략 아이디어, 복기까지 매매 준비 과정을 하나의 루틴으로 연결합니다.
+          </p>
+        </div>
+        <div class="os-grid">
+          <article>
+            <span>01</span>
+            <h3>Market Pulse</h3>
+            <p>NQ, ES, BTC, DXY, Gold, Oil, US10Y, VIX를 빠르게 스캔해 오늘의 시장 압력을 파악합니다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>State Engine</h3>
+            <p>달러, 금리, 지수, 변동성 흐름을 조합해 현재 시장이 공격적인지 방어적인지 정리합니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Composite Score</h3>
+            <p>Macro, Trend, Flow, News를 점수화해 매매 전 체크해야 할 방향성과 리스크를 한눈에 보여줍니다.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Strategy Library</h3>
+            <p>ORB, VWAP Reversion, Event, Liquidity 전략을 조건, 차트 예시, 설치 흐름까지 이어지는 실행 루틴으로 제공합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section community-section" id="community">
+        <div class="community-copy">
+          <div class="eyebrow">
+            <span></span>
+            Community
+          </div>
+          <h2>혼자 찾지 말고, QVSD 카페에서 함께 정리하세요</h2>
+          <p>
+            시장 브리핑, 설치 가이드, 매매 복기, 전략 피드백을 QVSD 공식 카페에서 확인하세요. 도구를 받는 것에서 끝나지 않고, 실제 매매 루틴으로 이어지게 만듭니다.
+          </p>
+          <div class="membership-grid">
+            <article><strong>업데이트 공지</strong><span>신규 지표 · 배포 안내 · 설치 가이드</span></article>
+            <article><strong>데일리 브리핑</strong><span>주요 지수 · 매크로 · 뉴스 흐름</span></article>
+            <article><strong>전략 피드백</strong><span>매매 복기 · 아이디어 · 개선 요청</span></article>
+          </div>
+        </div>
+        <aside class="cafe-panel" aria-label="QVSD Naver Cafe">
+          <div class="cafe-panel__meta">Official Community</div>
+          <h3>QVSD 공식 커뮤니티</h3>
+          <p>
+            무료 지표 업데이트와 실전 활용 자료는 카페에서 가장 먼저 공유됩니다. QVSD 흐름을 따라가려면 공식 커뮤니티를 확인하세요.
+          </p>
+          <a
+            class="button button--primary"
+            href="https://cafe.naver.com/qvsd"
+            target="_blank"
+            rel="noopener"
+          >
+            <span aria-hidden="true">↗</span>
+            cafe.naver.com/qvsd
+          </a>
+        </aside>
+      </section>
+
+      <section class="section roadmap-section" id="roadmap">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              Roadmap
+            </div>
+          <h2>무료 지표에서 Trading OS로</h2>
+        </div>
+          <p>QVSD는 무료 인디케이터를 시작점으로 뉴스 대시보드, 전략 라이브러리, 저널, 자동매매 연구실까지 확장됩니다.</p>
+        </div>
+        <div class="roadmap-grid" data-roadmap-grid></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a class="brand brand--footer" href="#home" aria-label="QVSD home">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="30" height="30" fill="none">
+                <circle cx="21" cy="21" r="14.5" stroke="currentColor" stroke-width="3"></circle>
+                <line x1="31.5" y1="31.5" x2="43" y2="43" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"></line>
+                <rect x="13" y="20" width="4" height="7" rx="1" fill="currentColor"></rect>
+                <rect x="19" y="17" width="4" height="9" rx="1" fill="currentColor"></rect>
+                <rect x="25" y="13" width="4" height="7" rx="1" fill="currentColor"></rect>
+                <path d="M13 26 L20 20 L26 23 L31 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            <span class="brand__text"><span>QVSD</span></span>
+          </a>
+          <p>QVSD는 NinjaTrader 트레이더가 매매 전 시장을 더 빠르게 정리하도록 돕는 분석 도구와 커뮤니티를 만듭니다.</p>
+        </div>
+        <div>
+          <h3>Indicators</h3>
+          <a href="#indicators">전체 라이브러리</a>
+          <a href="downloads/QVSD-Free-Indicator-Pack.zip" download>무료 지표 팩</a>
+          <a href="#roadmap">PRO 로드맵</a>
+        </div>
+        <div>
+          <h3>OS</h3>
+          <a href="#os">Market Pulse</a>
+          <a
+            href="https://lp.ninjatrader.com/platform?irgwc=1&amp;afsrc=1&amp;im_ref=WPRQ8d3LLxyZWyS0AX32oTqcUkuTveyWMTZKXs0&amp;sharedid=&amp;irpid=6341513"
+            target="_blank"
+            rel="noopener"
+          >NinjaTrader 시작하기</a>
+          <a href="https://cafe.naver.com/qvsd" target="_blank" rel="noopener">QVSD 네이버 카페</a>
+          <a href="#community">Community</a>
+        </div>
+      </div>
+      <p class="risk">
+        NinjaTrader®는 NinjaTrader Group, LLC의 등록상표입니다. QVSD는 투자 자문, 매매 신호, 계좌 운용, 주문 집행을 제공하지 않습니다. 선물·외환·가상자산 거래에는 원금 손실 위험이 있으며 모든 거래 결정과 리스크 관리는 사용자 책임입니다.
+      </p>
+      <p class="copyright">© 2026 QVSD · Quant Vision · Setting Direction</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
