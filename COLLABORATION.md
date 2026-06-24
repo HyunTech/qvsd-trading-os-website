@@ -7,7 +7,7 @@
 3. 수정 후 커밋하고 GitHub에 푸시합니다.
 4. Pull Request를 열어 변경 내용을 확인합니다.
 5. 확인이 끝나면 `main`에 병합합니다.
-6. `main`에 병합되면 GitHub Pages 배포가 자동으로 실행됩니다.
+6. `main`에 병합되면 GitHub Pages가 저장소 루트 파일을 자동으로 게시합니다.
 
 ## 자주 쓰는 명령
 
@@ -26,5 +26,5 @@ git push -u origin 작업-브랜치명
 
 ## 배포
 
-이 저장소는 `.github/workflows/pages.yml`을 통해 GitHub Pages에 배포됩니다.
-`main` 브랜치에 푸시되면 정적 사이트 파일이 자동으로 배포됩니다.
+이 저장소는 GitHub Pages의 `Deploy from a branch` 설정으로 배포됩니다.
+배포 소스는 `main` 브랜치의 `/ (root)` 경로입니다.
