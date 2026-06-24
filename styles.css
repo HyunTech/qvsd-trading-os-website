@@ -288,7 +288,7 @@ img {
   text-transform: uppercase;
 }
 
-.eyebrow span {
+.eyebrow > span:first-child {
   display: inline-block;
   width: 30px;
   height: 1px;
